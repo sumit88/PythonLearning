@@ -6,22 +6,22 @@ class A:
         self.a = a
 
     def print_me(self):
-        print(f'Hello from A')
+        print('Hello from A')
 
 
 class B(A):
 
     def __init__(self):
         print('Constructor of B called')
-      #  A.__init__(self, 0)
+
+    #  A.__init__(self, 0)
 
     def print_me(self):
-        print(f'Hello from B')
+        print('Hello from B')
 
 
-class C(A,B):
+class C(B, A):
     pass
-
 
 
 c = B()

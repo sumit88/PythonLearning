@@ -2,15 +2,12 @@ import sys
 
 
 class Solution:
-
-
-# Write your code here
-    a = []    #array
-    b = []    #queue
+    # Write your code here
+    a = []  # array
+    b = []  # queue
 
     def pushCharacter(self, d):
         self.a.insert(0, d)
-
 
     def enqueueCharacter(self, d):
         self.b += d
@@ -20,6 +17,7 @@ class Solution:
 
     def dequeueCharacter(self):
         return self.b.pop()
+
 
 # read the string s
 s = input()
